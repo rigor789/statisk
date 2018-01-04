@@ -8,7 +8,7 @@ Think of it like you define the desired routes, but instead of controllers (from
 
 For example
 
-```
+```js
 const routes = {
     // the / route will be matched from content/index.html
     '/': {
@@ -44,7 +44,7 @@ A pipeline is just a simple chain of functions. The order is important, because 
 
 ### Example pipeline
 
-```
+```js
 const routes = {
     '/blog/:slug/': {
         from: 'content/posts/:slug.md',
