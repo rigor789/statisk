@@ -1,0 +1,25 @@
+{
+  "name": "static-builder",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A static site builder, based on routes.",
+  "main": "lib/generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rigor789",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^5.0.0",
+    "gray-matter": "^3.1.1",
+    "recursive-readdir": "^2.2.1",
+    "remark": "^8.0.0",
+    "remark-html": "^7.0.0",
+    "remark-preset-lint-recommended": "^3.0.1",
+    "rimraf": "^2.6.2",
+    "vfile-reporter": "^4.0.0",
+    "chalk": "^2.3.0",
+    "path-to-regexp": "^2.1.0"
+  }
+}
