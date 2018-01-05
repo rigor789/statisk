@@ -29,11 +29,11 @@ const routes = {
 };
 ```
 
-By default easy file will be run through a default `pipeline`, which will basically read the contents of the file, and then write a new file in the `dist` folder at the given path.
+By default every file will be run through a default `pipeline`, which will basically read the contents of the file, and then write a new file in the `dist` folder at the given path.
 
 In many cases we want to apply different transformations to a file, this is done by specifying a `pipeline` in the route definition.
 
-The `pipeline` property can be an array for async functions (or promises)
+The `pipeline` property can be an array of async functions (or promises)
 or an instance of the `lib/Pipeline` class.
 
 ## What's a pipeline?
