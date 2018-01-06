@@ -1,28 +1,36 @@
 const Generator = require('./lib/generator');
-
-const m = require('gray-matter');
-const matter = async file => {
-  const parsed = m(file.contents);
-  file.matter = parsed.data;
-  file.contents = parsed.content;
-
-  return file;
-};
+const matter = require('./lib/plugins/matter');
 const markdown = require('./lib/plugins/markdown');
+const templates = require('./lib/plugins/templates');
 
 const routes = {
   'blog/:year/:month/:day/:slug/': {
     from: 'content/blog/:year-:month-:day-:slug.md',
     pipeline: [
-      matter,
-      markdown
+      matter(),
+      markdown(),
+      templates({
+        path: './templates',
+        template: 'post.ejs',
+        data(file) {
+          const {year, month, day} = file.matched.params;
+
+          return {
+            post: {
+              date: `${year}-${month}-${day}`,
+              title: file.matter.title,
+              contents: file.contents
+            }
+          };
+        }
+      })
     ]
   },
   ':lang/docs/:path+/': {
     from: 'content/docs/:lang/:path+.md',
     pipeline: [
-      matter,
-      markdown,
+      matter(),
+      markdown(),
     ]
   },
   ':lang?/': {
