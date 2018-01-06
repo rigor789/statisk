@@ -6,7 +6,7 @@
   "main": "lib/generator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "node example/app.js"
+    "example": "node example/build.js"
   },
   "keywords": [],
   "author": "Igor Randjelovic",
