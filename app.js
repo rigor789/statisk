@@ -11,8 +11,8 @@ const matter = async file => {
 const markdown = require('./lib/plugins/markdown');
 
 const routes = {
-  'blog/:slug/': {
-    from: 'content/blog/:slug.md',
+  'blog/:year/:month/:day/:slug/': {
+    from: 'content/blog/:year-:month-:day-:slug.md',
     pipeline: [
       matter,
       markdown
@@ -35,9 +35,8 @@ new Generator({
   source: './content',
   destination: './dist',
   clean: true,
+  // verbose: true,
+  // debug: true,
   routes,
-}).run()
-  .then(files => {
-    console.log(`Built ${files.length} files: \n${files.map(f => f.matched.build() + 'index.html').join('\n')}`)
-  })
-  .catch(err => console.log('err', err));
+})
+  .run();
