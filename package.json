@@ -5,7 +5,8 @@
   "description": "A static site builder, based on routes.",
   "main": "lib/generator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "node example/app.js"
   },
   "keywords": [],
   "author": "Igor Randjelovic",

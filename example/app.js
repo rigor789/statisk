@@ -1,7 +1,7 @@
-const Generator = require('./lib/generator');
-const matter = require('./lib/plugins/matter');
-const markdown = require('./lib/plugins/markdown');
-const templates = require('./lib/plugins/templates');
+const Generator = require('../lib/generator');
+const matter = require('../lib/plugins/matter');
+const markdown = require('../lib/plugins/markdown');
+const templates = require('../lib/plugins/templates');
 
 const authors = {
   'rigor789': {
