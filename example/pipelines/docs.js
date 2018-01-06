@@ -1,6 +1,5 @@
 const matter = require('../../lib/plugins/matter');
 const markdown = require('../../lib/plugins/markdown');
-const templates = require('../../lib/plugins/templates');
 
 module.exports = [
   matter(),
@@ -17,21 +16,22 @@ module.exports = [
 
     return file;
   },
-  templates({
-    path: './templates',
-    template: 'doc.ejs',
-    data(file) {
-      return {
-        doc: {
+  async file => {
+    file.view = {
+      name: 'doc',
+      data() {
+        return {
           title: file.matter.title,
-          contents: file.contents,
-          category: file.matter.category,
-          contributors: (file.matter.contributors || []).map(name => ({
-            name: name,
-            image: `https://github.com/${name}.png`
-          }))
+          doc: {
+            title: file.matter.title,
+            category: file.matched.params.categories.join(':'),
+            contributors: file.matter.contributors || [],
+            contents: file.contents,
+          }
         }
-      };
-    }
-  })
+      }
+    };
+
+    return file;
+  }
 ];

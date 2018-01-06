@@ -1,0 +1,11 @@
+<h1>Contributors</h1>
+
+<ul>
+    @each(contributor in contributors)
+    <li>
+        <a href="https://github.com/{{ contributor }}">
+            {{ contributor }}
+        </a>
+    </li>
+    @endeach
+</ul>

@@ -1,0 +1,19 @@
+@layout('layout.master')
+
+@section('content')
+<div>
+    <div>
+    @!component('components.sidebar', { items: posts })
+    </div>
+
+    <div>
+        <h1>{{ post.title }}</h1>        
+        <small>{{ post.date }}</small>
+        <hr>
+
+        <article>
+            {{{ post.contents }}}
+        </article>
+    </div>
+</div>
+@endsection

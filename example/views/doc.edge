@@ -1,0 +1,23 @@
+@layout('layout.master')
+
+@section('content')
+<div>
+    <div>
+    @!component('components.sidebar', { items: posts })
+    </div>
+
+    <div>
+        <small>{{ doc.category }}</small>
+        <h1>{{ doc.title }}</h1>
+        <hr>
+
+        <article>
+            {{{ doc.contents }}}
+        </article>
+
+        @if(doc.contributors)
+        @!component('components.contributors', { contributors: doc.contributors })
+        @endif
+    </div>
+</div>
+@endsection
