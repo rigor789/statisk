@@ -1,9 +1,16 @@
-<main>
-    <h1><%=  post.title %></h1>
-
+<div class="post-body">
+    <h1><%= post.title %></h1>
     <small><%= post.date %></small>
-
+    <ul>
+        <% post.authors.forEach(author => { %>
+        <li>
+            <a href="<%= author.url %>"><%= author.name %></a>
+        </li>
+        <% }) %>
+    </ul>
+    <hr>
     <article>
         <%- post.contents %>
     </article>
-</main>
+
+</div>

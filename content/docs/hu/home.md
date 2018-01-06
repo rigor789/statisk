@@ -1,5 +1,0 @@
----
-title: Főoldal
----
-
-Üdvözöljük oldalunkon

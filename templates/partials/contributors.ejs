@@ -1,0 +1,8 @@
+<h2>Contributors</h2>
+<hr>
+<% contributors.forEach(contributor => { %>
+<div>
+    <img src="<%= contributor.image %>" alt="<%= contributor.name %>">
+    <span><%= contributor.name %></span>
+</div>
+<% }) %>
