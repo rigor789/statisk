@@ -1,4 +1,5 @@
 # Static Site Generator
+[![Build Status](https://img.shields.io/circleci/project/rigor789/static-builder/master.svg)](https://circleci.com/gh/rigor789/static-builder)
 
 > name pending
 
