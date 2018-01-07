@@ -5,7 +5,7 @@
   "description": "A static site builder, based on routes.",
   "main": "lib/generator.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "example": "node example/build.js"
   },
   "keywords": [],
