@@ -20,3 +20,13 @@ test('should add messages to file object', async () => {
   expect(res).toHaveProperty('messages');
   expect(res.messages.length).toEqual(1);
 });
+
+test('should not add messages to file object if there are no messages', async () => {
+  const plugin = markdown();
+
+  const res = await (plugin({
+    contents: `the content\n`
+  }));
+
+  expect(res).not.toHaveProperty('messages');
+});
