@@ -1,5 +1,5 @@
-# Static Site Generator
-[![Build Status](https://img.shields.io/circleci/project/rigor789/static-builder/master.svg)](https://circleci.com/gh/rigor789/static-builder)
+# Static Site Generator [![Build Status](https://img.shields.io/circleci/project/rigor789/static-builder/master.svg)](https://circleci.com/gh/rigor789/static-builder) [![Codecov](https://img.shields.io/codecov/c/github/rigor789/static-builder.svg)](https://codecov.io/gh/rigor789/static-builder)
+
 
 > name pending
 
