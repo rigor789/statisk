@@ -65,6 +65,8 @@ const routes = {
 }
 ```
 
+This is a very simple example, and in some cases handling it inline can be tedious. When the routes definition gets out of hand, it's a good idea to move the pipeline definition into it's own file, and then require it in the route definition.
+
 ## License
 
 Released under the MIT license.
