@@ -1,6 +1,6 @@
 {
   "name": "statisk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A static site builder, based on routes.",
   "main": "lib/generator.js",
   "repository": "https://github.com/rigor789/statisk",
@@ -18,7 +18,7 @@
   ],
   "author": "Igor Randjelovic",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.3.0",
     "edge.js": "^1.1.3",
     "ejs": "^2.5.7",
