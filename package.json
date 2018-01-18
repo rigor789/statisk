@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A static site builder, based on routes.",
   "main": "lib/generator.js",
+  "repository": "https://github.com/rigor789/statisk",
   "scripts": {
     "test": "jest --coverage",
     "example": "node example/build.js"
