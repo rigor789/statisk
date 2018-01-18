@@ -1,6 +1,5 @@
 {
-  "name": "static-builder",
-  "private": true,
+  "name": "statisk",
   "version": "1.0.0",
   "description": "A static site builder, based on routes.",
   "main": "lib/generator.js",
@@ -8,7 +7,14 @@
     "test": "jest --coverage",
     "example": "node example/build.js"
   },
-  "keywords": [],
+  "keywords": [
+    "static",
+    "site",
+    "generator",
+    "route",
+    "router",
+    "routes"
+  ],
   "author": "Igor Randjelovic",
   "license": "MIT",
   "devDependencies": {
