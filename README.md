@@ -1,7 +1,11 @@
-# Static Site Generator [![Build Status](https://img.shields.io/circleci/project/rigor789/static-builder/master.svg)](https://circleci.com/gh/rigor789/static-builder) [![Codecov](https://img.shields.io/codecov/c/github/rigor789/static-builder.svg)](https://codecov.io/gh/rigor789/static-builder)
+# Statisk [![Build Status](https://img.shields.io/circleci/project/rigor789/static-builder/master.svg)](https://circleci.com/gh/rigor789/static-builder) [![Codecov](https://img.shields.io/codecov/c/github/rigor789/static-builder.svg)](https://codecov.io/gh/rigor789/static-builder)
 
+<p align="center">
+    <a href="https://github.com/rigor789/statisk">
+        <img src="logo.png">
+    </a>
+</p>
 
-> name pending
 
 This is a little experiment for building a static site generator that is based around routes.
 
